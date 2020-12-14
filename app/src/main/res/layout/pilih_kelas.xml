@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#5F3E73"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kelas"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#fff"
+            android:textSize="22dp"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/radio_kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/kelas_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="X"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#fff"/>
+
+            <RadioButton
+                android:id="@+id/kelas_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="XI"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#fff"/>
+
+            <RadioButton
+                android:id="@+id/kelas_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="XII"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#fff"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

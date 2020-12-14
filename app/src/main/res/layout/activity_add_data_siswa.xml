@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".views.addDataSiswa"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:text="Tambahkan Data Siswa"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="22dp"
+        android:textColor="#000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edt_nis"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_style"
+                android:hint="NIS"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/edt_nama_lengkap"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_style"
+                android:hint="Nama Lengkap"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_style"
+                android:hint="Email"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_style"
+                android:hint="Username"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_style"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_style">
+
+                <Spinner
+                    android:id="@+id/spinnerJurusan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_style">
+
+                <Spinner
+                    android:id="@+id/spinnerJabatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_periode"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_style"
+                android:hint="Periode"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/edt_Detail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_style"
+                android:hint="Detail"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/edt_style_2"
+                    android:backgroundTint="#5F3E73"
+                    android:onClick="back"
+                    android:src="@drawable/back" />
+
+                <Button
+                    android:id="@+id/btn_daftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_style_2"
+                    android:fontFamily="@font/poppins_regular"
+                    android:onClick="daftarsiswa"
+                    android:text="Daftar"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aplikasi Presensi Sekolah</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rpl">RPL</string>
+    <string name="tkj">TKJ</string>
+    <string name="jumlah_siswa">Jumlah Siswa :</string>
+    <string name="splash">AVsplashScreenAnimasi</string>
+    <string name="copyright_2k20">Copyright © 2020 All Rights Reserved</string>
+</resources>

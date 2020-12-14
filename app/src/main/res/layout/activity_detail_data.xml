@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.detail_data">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="4"
+        android:background="@drawable/bg_back"
+        android:backgroundTint="#5F3E73"
+        android:onClick="back"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="15pt"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Detail"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Data Siswa"
+                android:textColor="#000"
+                android:textSize="15pt" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_back"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Total Kelas IX :"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:paddingStart="5dp"
+                    android:id="@+id/total_siswa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:text="6 Orang"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Mapel :"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:paddingStart="5dp"
+                    android:id="@+id/total_mapel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" 9 Mapel"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ketua Kelas :"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:paddingStart="5dp"
+                    android:id="@+id/ketua_kelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Azka Yasakha"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Jurusan RPL :"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:paddingStart="5dp"
+                    android:id="@+id/jurusan_rpl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RPL"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jurusan TKJ :"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:paddingStart="5dp"
+                    android:id="@+id/jurusan_tkj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TKJ"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#fff"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
