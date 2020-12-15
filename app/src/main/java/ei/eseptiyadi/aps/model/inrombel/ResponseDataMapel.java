@@ -1,8 +1,7 @@
 package ei.eseptiyadi.aps.model.inrombel;
 
-import com.google.gson.annotations.SerializedName;
-
 import java.util.List;
+import com.google.gson.annotations.SerializedName;
 
 public class ResponseDataMapel{
 
