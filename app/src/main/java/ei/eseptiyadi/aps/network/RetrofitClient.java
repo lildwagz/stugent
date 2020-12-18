@@ -12,7 +12,7 @@ public class RetrofitClient {
     private static Retrofit getRetrofit() {
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.11/presensi/")
+                .baseUrl("https://api.gabutcodex.tk/stugent/v1/module/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         return  retrofit;
